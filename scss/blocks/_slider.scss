@@ -1,0 +1,14 @@
+.slider {
+  padding: 21px 0;
+  cursor: pointer;
+  margin-bottom: 12px;
+
+  &__item {
+    margin: 0px 20px;
+    border-radius: 20.317px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

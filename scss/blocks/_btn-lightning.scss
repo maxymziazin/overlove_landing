@@ -1,0 +1,61 @@
+.btn-lightning {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  max-width: 158px;
+  padding: 14px 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  background: $yellow;
+  border: 2px solid transparent;
+  border-radius: 1000px;
+  transition: $transition;
+
+  &__text {
+    margin-right: 8px;
+  }
+
+  &__icon {
+    fill: #2c2c2c;
+    display: block;
+    width: 12px;
+    height: 20px;
+
+    transition: $transition;
+  }
+
+  &:hover {
+    background: transparent;
+    border: 2px solid $yellow;
+    color: $yellow;
+  }
+
+  &:hover &__icon {
+    fill: $yellow;
+  }
+
+  &--transparent {
+    background: transparent;
+    border: 2px solid $yellow;
+    color: $yellow;
+
+    .btn-lightning__icon {
+      fill: none;
+      stroke: $yellow;
+    }
+
+    &:hover {
+      background: $yellow;
+      border: 2px solid transparent;
+      color: #2c2c2c;
+    }
+
+    &:hover .btn-lightning__icon {
+      fill: transparent;
+      stroke: #2c2c2c;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.header {
+  padding: 40px 0 150px;
+  background: #35b2ad url("../img/header/bg-top.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 160px;
+  }
+}

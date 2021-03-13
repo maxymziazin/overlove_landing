@@ -1,0 +1,22 @@
+.btn-hard {
+  position: relative;
+  padding: 23px 136px 23px 72px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  background: $yellow;
+  border-radius: 2000px;
+  transition: $transition;
+
+  &:hover {
+    background: $white;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 16px;
+    right: 72px;
+  }
+}
