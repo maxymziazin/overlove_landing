@@ -1,0 +1,18 @@
+.about {
+  &__inner {
+    padding: 516px 648px 104px 32px;
+    background: #e8e1d9 url("../img/about/bg-about.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+  }
+
+  &__content {
+    padding: 32px 64px;
+    background: rgba(255, 255, 255, 0.8);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(24px);
+    border-radius: 16px;
+  }
+}

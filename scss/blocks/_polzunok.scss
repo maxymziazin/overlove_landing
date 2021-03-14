@@ -1,0 +1,36 @@
+.polzunok {
+  padding: 0px 25px;
+  height: 8px;
+  background: #e8eaec;
+  border-radius: 4px;
+}
+
+#polzunok {
+  position: relative;
+}
+
+.ui-slider.ui-slider-horizontal {
+  height: 8px;
+  background: #e8eaec;
+  border-radius: 4px;
+  border: none;
+}
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  top: 1px;
+  width: 50px;
+  height: 6px;
+  margin-left: -25px;
+
+  outline: none;
+  border: none;
+  background: #ffd703;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ui-slider .ui-slider-range {
+  height: 8px;
+  background: #e8eaec;
+}

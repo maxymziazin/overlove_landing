@@ -1,0 +1,49 @@
+.features-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 96px;
+
+  &__icon {
+    margin-right: 30px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.25px;
+  }
+
+  &__title--yellow {
+    color: #ffd84e;
+  }
+
+  &__title--red {
+    color: #fb6363;
+  }
+
+  &__title--purple-1 {
+    color: #a66df5;
+  }
+
+  &__title--green {
+    color: #6dd6b0;
+  }
+
+  &__title--blue {
+    color: #708cf0;
+  }
+
+  &__title--purple-2 {
+    color: #a02e8e;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #707070;
+  }
+}

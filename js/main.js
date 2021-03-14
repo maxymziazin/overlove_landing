@@ -1,5 +1,9 @@
 $(function () {
-  $("#play").click(function (event) {
+  // Play animation
+
+  let $play = $("#play");
+
+  $play.click(function (event) {
     let ms = 300;
     let width = $(this).width();
     let height = $(this).height();
@@ -21,33 +25,51 @@ $(function () {
       );
   });
 
-  // // Slider
-  // $("#slider").slick({
-  //   infinite: true,
-  //   slidesToShow: 5,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  // });
-});
+  // Slider un-graph
 
-$(function () {
-  $("#slider").on("init reInit", function (event, slick) {
-    let amount = slick.slideCount;
-    $("#range").attr("max", amount);
+  let $polzunok = $("#polzunok");
+  let $slider = $("#slider");
+  let $sliderItem = $(".slider__item");
+
+  $polzunok.slider({
+    animate: 400,
+    range: "min",
+    value: 0,
   });
 
-  $("#slider").on("afterChange", function (e, slick, currentSlide) {
-    $("#range").val(currentSlide + 1);
+  $slider.on("init reInit", function (event, slick) {
+    $polzunok.slider("option", {
+      max: slick.slideCount - 1,
+    });
   });
 
-  $("#range").on("input change", function () {
-    $("#slider").slick("slickGoTo", this.value - 1);
+  $slider.on("afterChange", function (e, slick, currentSlide) {
+    $polzunok.slider("value", currentSlide);
   });
 
-  $("#slider").slick({
+  $polzunok.on("slide", function (event, ui) {
+    $slider.slick("slickGoTo", ui.value);
+  });
+
+  $slider.slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
+  });
+
+  // Carousel
+
+  let $carousel = $("#carousel");
+
+  $carousel.slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    prevArrow:
+      '<button type="button" class="carousel__btn slick-prev"></button>',
+    nextArrow:
+      '<button type="button" class="carousel__btn slick-next"></button>',
   });
 });

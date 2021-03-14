@@ -1,14 +1,14 @@
-.testimonials {
-  padding: 240px 0 192px;
+.features {
+  padding: 240px 0px 120px;
 
   &__title {
-    margin-bottom: 32px;
+    margin-bottom: 96px;
   }
 
   &__inner {
-    margin: 0px -16px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0px -16px;
   }
 
   &__item {

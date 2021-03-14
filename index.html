@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -59,7 +60,7 @@
           <div class="listen-to__content">
             <h1 class="listen-to__title">Listen To The Beat Of The Web</h1>
             <div class="listen-to__text">
-              First template from series templates to design web pages, using
+              First template from series templates to features web pages, using
               components system
             </div>
             <a class="btn-hard" href="">
@@ -143,7 +144,7 @@
                 />
                 <div class="review__info">
                   <div class="review__name">Nick Parker</div>
-                  <div class="review__position">Wed-designer</div>
+                  <div class="review__position">Wed-featureser</div>
                 </div>
               </div>
               <div class="review__text">
@@ -233,12 +234,199 @@
         </div>
       </div>
       <div class="container">
-        <input type="range" id="range" min="1" value="1" step="1" />
+        <div class="polzunok">
+          <div id="polzunok"></div>
+        </div>
       </div>
     </section>
 
+    <section class="features">
+      <div class="container">
+        <div class="title features__title">Speed up your design process</div>
+        <div class="features__inner">
+          <div class="features__item">
+            <div class="features-card">
+              <img
+                class="features-card__icon"
+                src="img/features-card/features-card1.svg"
+                alt=""
+              />
+              <div class="features-card__info">
+                <div class="features-card__title features-card__title--yellow">
+                  Auto Layout
+                </div>
+                <h3 class="features-card__text">
+                  Sed do eiusmod tempor incididunt ut consectetur adipisicing
+                  elit,do eiusmod tempor incididunt ut labore et dolore
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features-card">
+              <img
+                class="features-card__icon"
+                src="img/features-card/features-card2.svg"
+                alt=""
+              />
+              <div class="features-card__info">
+                <div class="features-card__title features-card__title--red">
+                  Variants
+                </div>
+                <h3 class="features-card__text">
+                  Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features-card">
+              <img
+                class="features-card__icon"
+                src="img/features-card/features-card3.svg"
+                alt=""
+              />
+              <div class="features-card__info">
+                <div
+                  class="features-card__title features-card__title--purple-1"
+                >
+                  Components
+                </div>
+                <h3 class="features-card__text">
+                  Dor sum dolor sit amet, consectetur adipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore ma iusmod
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features-card">
+              <img
+                class="features-card__icon"
+                src="img/features-card/features-card4.svg"
+                alt=""
+              />
+              <div class="features-card__info">
+                <div class="features-card__title features-card__title--green">
+                  Atomic Design
+                </div>
+                <h3 class="features-card__text">
+                  Adipisicing elit, orem ipsum dolor sit amet, consectetur sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features-card">
+              <img
+                class="features-card__icon"
+                src="img/features-card/features-card5.svg"
+                alt=""
+              />
+              <div class="features-card__info">
+                <div class="features-card__title features-card__title--blue">
+                  Animated
+                </div>
+                <h3 class="features-card__text">
+                  Morem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features-card">
+              <img
+                class="features-card__icon"
+                src="img/features-card/features-card6.svg"
+                alt=""
+              />
+              <div class="features-card__info">
+                <div
+                  class="features-card__title features-card__title--purple-2"
+                >
+                  Responsive
+                </div>
+                <h3 class="features-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__content">
+            <div class="carousel" id="carousel">
+              <div>
+                <div class="carousel__item">
+                  <h2 class="title carousel__title">Enjoy this product</h2>
+                  <div class="carousel__text">
+                    This project required a huge amount of hours but sit amet,
+                    consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliquat enim ad minim.
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="carousel__item">
+                  <h2 class="title carousel__title">Enjoy these products</h2>
+                  <div class="carousel__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Provident, totam placeat laborum atque dolorem amet ducimus,
+                    eligendi ex dicta perspiciatis enim cum. Aut praesentium
+                    iure impedit corrupti distinctio. Laudantium, qui.
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="carousel__item">
+                  <h2 class="title carousel__title">Enjoy that product</h2>
+                  <div class="carousel__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Provident, asperiores deserunt, aut laudantium dolores
+                    aliquid, impedit facere nostrum temporibus perferendis
+                    soluta nulla cum suscipit. Doloribus accusantium sequi
+                    consequuntur.
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="carousel__item">
+                  <h2 class="title carousel__title">Enjoy those products</h2>
+                  <div class="carousel__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+                    incidunt eius beatae, a commodi fuga aliquid id hic
+                    adipisci. Eos quo ullam commodi deserunt itaque. Explicabo
+                    placeat iusto corporis neque!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="btn-lightning" href="#">
+              <span class="btn-lightning__text">Sign Up</span>
+              <svg class="btn-lightning__icon">
+                <use xlink:href="#lightning-dark"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team"></section>
+
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

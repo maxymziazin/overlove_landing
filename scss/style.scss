@@ -27,17 +27,6 @@ p {
   margin: 0;
 }
 
-.slick-active {
-  outline: none;
-}
-
-#range {
-  display: block;
-  width: 100%;
-  margin-bottom: 100px;
-  outline: none;
-}
-
 @import "blocks/container";
 @import "blocks/header";
 @import "blocks/nav";
@@ -51,3 +40,8 @@ p {
 @import "blocks/review";
 @import "blocks/un-graph";
 @import "blocks/slider";
+@import "blocks/polzunok";
+@import "blocks/features";
+@import "blocks/features-card";
+@import "blocks/about";
+@import "blocks/carousel";
