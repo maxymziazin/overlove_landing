@@ -1,0 +1,33 @@
+.team {
+  padding: 240px 0;
+
+  &__title {
+    margin-bottom: 17px;
+  }
+
+  &__inner {
+    margin-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    max-width: 830px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #707070;
+  }
+
+  &__members {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -16px;
+  }
+
+  &__item {
+    width: 25%;
+    padding: 0px 16px;
+  }
+}

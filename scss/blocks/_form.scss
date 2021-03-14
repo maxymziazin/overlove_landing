@@ -1,0 +1,30 @@
+.form {
+  display: flex;
+  max-width: 486px;
+  width: 100%;
+  margin: 0 auto 32px;
+
+  &__input {
+    max-width: 312px;
+    width: 100%;
+    padding: 14px 34px;
+    margin-right: 16px;
+
+    background: $white;
+    border: 1px solid #cafffd;
+    border-radius: 2000px;
+    outline: none;
+    transition: $transition;
+
+    &:focus {
+      border-color: $yellow;
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #cccccc;
+    }
+  }
+}

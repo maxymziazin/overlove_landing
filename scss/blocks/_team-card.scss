@@ -1,0 +1,38 @@
+.team-card {
+  &__inner {
+    position: relative;
+  }
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__content {
+    padding: 16px 32px;
+    width: 272px;
+    height: 158px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(13px);
+    border-radius: 30px;
+  }
+
+  &__name {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: $dark;
+  }
+
+  &__position {
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: $blue-green;
+  }
+}
