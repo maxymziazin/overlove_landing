@@ -1,8 +1,40 @@
 .features {
   padding: 240px 0px 120px;
 
+  @media ($extra-large-XL) {
+    padding: 200px 0px 100px;
+  }
+
+  @media ($extra-large) {
+    padding: 160px 0px 60px;
+  }
+
+  @media ($large) {
+    padding: 100px 0px 30px;
+  }
+
+  @media ($small) {
+    padding: 80px 0px 20px;
+  }
+
+  @media ($extra-small) {
+    padding: 50px 0px 10px;
+  }
+
   &__title {
     margin-bottom: 96px;
+
+    @media ($large) {
+      margin-bottom: 76px;
+    }
+
+    @media ($small) {
+      margin-bottom: 56px;
+    }
+
+    @media ($extra-small) {
+      margin-bottom: 40px;
+    }
   }
 
   &__inner {
@@ -14,5 +46,13 @@
   &__item {
     width: 33.3333%;
     padding: 0px 16px;
+
+    @media ($large) {
+      width: 50%;
+    }
+
+    @media ($small) {
+      width: 100%;
+    }
   }
 }

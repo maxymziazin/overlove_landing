@@ -3,6 +3,20 @@
 
   &__title {
     margin-bottom: 8px;
+
+    @media ($medium) {
+      font-size: 52px;
+    }
+
+    @media ($small) {
+      font-size: 36px;
+    }
+
+    @media ($extra-small) {
+      text-align: left;
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
 
   &__text {
@@ -12,6 +26,16 @@
     line-height: 24px;
     letter-spacing: 0.1px;
     color: #707070;
+
+    @media ($small) {
+      margin-bottom: 24px;
+      font-size: 14px;
+    }
+
+    @media ($extra-small) {
+      line-height: 22px;
+      margin-bottom: 48px;
+    }
   }
 
   &__btn {
@@ -36,6 +60,10 @@
       right: 20px;
       transform: rotate(45deg);
     }
+
+    @media ($extra-small) {
+      display: none !important;
+    }
   }
 
   ul,
@@ -51,6 +79,10 @@
     bottom: -32px;
     left: 50%;
     transform: translateX(-50%);
+
+    @media ($extra-small) {
+      bottom: 24px;
+    }
 
     li {
       margin: 0px 8px;

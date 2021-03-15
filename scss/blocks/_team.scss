@@ -1,6 +1,22 @@
 .team {
   padding: 240px 0;
 
+  @media ($extra-large-XL) {
+    padding: 200px 0;
+  }
+
+  @media ($extra-large) {
+    padding: 160px 0;
+  }
+
+  @media ($large) {
+    padding: 100px 0;
+  }
+
+  @media ($medium) {
+    padding: 100px 0 60px;
+  }
+
   &__title {
     margin-bottom: 17px;
   }
@@ -9,6 +25,7 @@
     margin-bottom: 96px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   &__text {
@@ -18,16 +35,30 @@
     line-height: 24px;
     letter-spacing: 0.1px;
     color: #707070;
+
+    @media ($extra-large) {
+      max-width: 700px;
+    }
+
+    @media ($large) {
+      max-width: 600px;
+    }
   }
 
   &__members {
     display: flex;
     flex-wrap: wrap;
     margin: 0px -16px;
+    padding-bottom: 40px;
   }
 
   &__item {
     width: 25%;
     padding: 0px 16px;
+
+    @media ($medium) {
+      width: 33.33333%;
+      margin-bottom: 70px;
+    }
   }
 }

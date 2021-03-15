@@ -5,6 +5,10 @@
 
   &__title {
     margin-bottom: 18px;
+
+    @media ($extra-small) {
+      margin-bottom: 28px;
+    }
   }
 
   &__text {
@@ -25,5 +29,9 @@
     position: absolute;
     right: -30px;
     top: -120px;
+
+    @media ($small) {
+      display: none;
+    }
   }
 }
