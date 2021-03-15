@@ -1,0 +1,41 @@
+.burger {
+  display: none;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+
+  &__item {
+    height: 2px;
+    width: 100%;
+    background-color: $white;
+    position: relative;
+  }
+
+  &__item::after,
+  &__item::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    background-color: $white;
+  }
+
+  &__item::before {
+    top: -6px;
+  }
+
+  &__item::after {
+    top: 6px;
+  }
+
+  @media ($small) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

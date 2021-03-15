@@ -10,6 +10,10 @@
   border-radius: 2000px;
   transition: $transition;
 
+  @media ($extra-large) {
+    padding: 20px 136px 20px 60px;
+  }
+
   &:hover {
     background: $white;
   }

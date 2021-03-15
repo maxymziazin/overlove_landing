@@ -5,10 +5,30 @@
   background-position: center;
   background-size: cover;
 
+  @media ($extra-large) {
+    padding: 20px 0 90px;
+  }
+
+  @media ($large) {
+    padding: 20px 0 60px;
+  }
+
+  @media ($medium) {
+    padding: 20px 0 30px;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 160px;
+
+    @media ($extra-large) {
+      margin-bottom: 120px;
+    }
+
+    @media ($small) {
+      margin-bottom: 100px;
+    }
   }
 }

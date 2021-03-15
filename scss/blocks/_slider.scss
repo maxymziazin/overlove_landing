@@ -3,9 +3,21 @@
   cursor: pointer;
   margin-bottom: 12px;
 
+  @media ($extra-small) {
+    margin-bottom: 0;
+  }
+
   &__item {
     margin: 0px 20px;
     border-radius: 20.317px;
+
+    @media ($medium) {
+      margin: 0px 10px;
+    }
+
+    @media ($small) {
+      margin: 0px 5px;
+    }
 
     img {
       max-width: 344px;

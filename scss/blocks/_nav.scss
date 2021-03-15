@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
 
+  @media ($small) {
+    display: none;
+  }
+
   &__link {
     padding: 16px 24px;
     margin-right: 24px;
@@ -12,9 +16,29 @@
     text-transform: uppercase;
     color: $white;
     transition: $transition;
+
+    &:nth-child(6) {
+      @media ($medium) {
+        margin-right: 0;
+      }
+    }
+
+    @media ($extra-large) {
+      margin-right: 16px;
+    }
+
+    @media ($large) {
+      padding: 12px 14px;
+    }
   }
 
   &__link:hover {
     color: $yellow;
+  }
+
+  .btn-lightning {
+    @media ($medium) {
+      display: none;
+    }
   }
 }

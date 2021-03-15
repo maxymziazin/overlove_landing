@@ -1,6 +1,14 @@
 .review {
   padding: 48px 0;
 
+  @media ($medium) {
+    padding: 24px 0;
+  }
+
+  @media ($small) {
+    padding: 24px 0;
+  }
+
   &__person {
     margin-bottom: 24px;
     display: flex;
@@ -18,6 +26,10 @@
     font-size: 32px;
     line-height: 48px;
     color: $dark;
+
+    @media ($large) {
+      font-size: 28px;
+    }
   }
 
   &__position {

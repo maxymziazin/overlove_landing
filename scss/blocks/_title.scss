@@ -3,4 +3,17 @@
   font-size: 60px;
   line-height: 90px;
   color: $dark;
+
+  @media ($large) {
+    font-size: 56px;
+  }
+
+  @media ($small) {
+    font-size: 50px;
+  }
+
+  @media ($extra-small) {
+    text-align: center;
+    line-height: 70px;
+  }
 }

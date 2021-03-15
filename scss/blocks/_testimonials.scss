@@ -1,8 +1,24 @@
 .testimonials {
   padding: 240px 0 192px;
 
+  @media ($extra-large) {
+    padding: 150px 0 102px;
+  }
+
+  @media ($small) {
+    padding: 60px 0 50px;
+  }
+
+  @media ($extra-small) {
+    padding: 40px 0 20px;
+  }
+
   &__title {
     margin-bottom: 32px;
+
+    @media ($large) {
+      margin-bottom: 16px;
+    }
   }
 
   &__inner {
@@ -14,5 +30,13 @@
   &__item {
     width: 33.3333%;
     padding: 0px 16px;
+
+    @media ($medium) {
+      width: 50%;
+    }
+
+    @media ($small) {
+      width: 100%;
+    }
   }
 }

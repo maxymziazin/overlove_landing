@@ -1,10 +1,25 @@
 .how-it-works {
+
   &__title {
     margin-bottom: 32px;
     font-weight: 400;
     font-size: 60px;
     line-height: 90px;
     color: #f4f4f4;
+
+    @media ($extra-large) {
+      font-size: 54px;
+    }
+
+    @media ($large) {
+      margin-bottom: 16px;
+    }
+
+    @media ($extra-small) {
+      margin-bottom: 6px;
+      font-size: 36px;
+      line-height: 60px;
+    }
   }
 
   &__inner {
@@ -16,5 +31,21 @@
   &__item {
     width: 33.3333%;
     padding: 0px 16px;
+
+    &:last-child {
+      @media ($extra-small) {
+        display: none;
+      }
+    }
+
+    @media ($medium) {
+      width: 50%;
+      margin-bottom: 32px;
+    }
+
+    @media ($extra-small) {
+      width: 100%;
+      margin-bottom: 16px;
+    }
   }
 }

@@ -58,6 +58,8 @@ $(function () {
     arrows: false,
   });
 
+  //! Повесь событие на ресайз страницы и перезагружай с новым slidesToShow
+
   // Carousel
 
   let $carousel = $("#carousel");

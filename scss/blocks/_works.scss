@@ -6,8 +6,28 @@
   border-radius: 16px;
   height: 100%;
 
+  @media ($large) {
+    padding: 22px;
+  }
+
+  @media ($medium) {
+    padding: 14px;
+  }
+
   &__logo {
     margin-bottom: 16px;
+
+    @media ($extra-large) {
+      margin-bottom: 8px;
+    }
+
+    @media ($small) {
+      margin-bottom: 0px;
+    }
+
+    @media ($extra-small) {
+      width: 60px;
+    }
   }
 
   &__title {
@@ -17,6 +37,18 @@
     line-height: 60px;
     letter-spacing: 0.25px;
     color: #f4f4f4;
+
+    @media ($extra-large) {
+      font-size: 36px;
+    }
+
+    @media ($small) {
+      margin-bottom: 0px;
+    }
+
+    @media ($extra-small) {
+      font-size: 32px;
+    }
   }
 
   &__text {
@@ -25,5 +57,9 @@
     line-height: 24px;
     letter-spacing: 0.1px;
     color: #cefffd;
+
+    @media ($extra-large) {
+      font-size: 15px;
+    }
   }
 }
