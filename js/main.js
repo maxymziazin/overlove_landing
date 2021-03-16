@@ -1,4 +1,49 @@
 $(function () {
+  // Burger
+
+  let $burger = $("#burger");
+  let $nav = $("#nav");
+  let ms = 300;
+
+  $burger.on("click", function (event) {
+    event.preventDefault();
+
+    $nav.slideToggle(ms);
+  });
+
+  $nav.on("click", function (event) {
+    if ($burger.css("display") != "none") {
+      $nav.slideUp(ms);
+    }
+  });
+
+  // Fixed header
+
+  let $body = $(document.body);
+  let $header = $("#header");
+  let $headerTop = $("#headerTop");
+
+  let scroll = $(window).scrollTop();
+  let bodyWidth = $body.width();
+  let headerHeight = $header.innerHeight();
+
+  checkScroll(scroll, bodyWidth);
+
+  $(window).on("scroll", function (event) {
+    scroll = $(window).scrollTop();
+    bodyWidth = $body.width();
+
+    checkScroll(scroll, bodyWidth);
+  });
+
+  function checkScroll(scroll, bodyWidth) {
+    if (scroll >= headerHeight && bodyWidth < 768) {
+      $headerTop.addClass("fixed");
+    } else {
+      $headerTop.removeClass("fixed");
+    }
+  }
+
   // Play animation
 
   let $play = $("#play");
@@ -29,7 +74,6 @@ $(function () {
 
   let $polzunok = $("#polzunok");
   let $slider = $("#slider");
-  let $sliderItem = $(".slider__item");
 
   $polzunok.slider({
     animate: 400,

@@ -9,7 +9,8 @@
 
   &__content {
     padding: 16px 32px;
-    width: 272px;
+    max-width: 272px;
+    width: 100%;
     height: 158px;
     position: absolute;
     left: 50%;
@@ -18,6 +19,10 @@
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(13px);
     border-radius: 30px;
+
+    @media ($large) {
+      padding: 8px 16px;
+    }
   }
 
   &__name {
@@ -26,6 +31,10 @@
     font-size: 24px;
     line-height: 36px;
     color: $dark;
+
+    @media ($large) {
+      font-size: 22px;
+    }
   }
 
   &__position {

@@ -4,6 +4,10 @@
   width: 100%;
   margin: 0 auto 32px;
 
+  @media ($extra-small) {
+    display: block;
+  }
+
   &__input {
     max-width: 312px;
     width: 100%;
@@ -25,6 +29,12 @@
       font-size: 12px;
       line-height: 18px;
       color: #cccccc;
+    }
+
+    @media ($extra-small) {
+      max-width: 100%;
+
+      margin-bottom: 20px;
     }
   }
 }

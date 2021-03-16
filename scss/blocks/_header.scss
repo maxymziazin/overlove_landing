@@ -17,18 +17,23 @@
     padding: 20px 0 30px;
   }
 
+  @media ($small) {
+    padding: 0 0 30px;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 160px;
-
-    @media ($extra-large) {
-      margin-bottom: 120px;
-    }
 
     @media ($small) {
-      margin-bottom: 100px;
+      position: absolute;
+      width: 100%;
+      z-index: 50;
+      margin-left: -15px;
+      margin-right: -15px;
+      padding: 10px 15px;
+      background: $blue-green;
     }
   }
 }

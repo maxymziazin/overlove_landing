@@ -11,6 +11,11 @@
     width: 25%;
     margin-bottom: 37px;
     padding-right: 10px;
+
+    @media ($extra-small) {
+      width: 50%;
+      margin-bottom: 26px;
+    }
   }
 
   &__bottom {
@@ -30,10 +35,19 @@
       background: #e5edf5;
       opacity: 0.2;
     }
+
+    @media ($small) {
+      display: block;
+    }
   }
 
   &__inner {
     display: flex;
+
+    @media ($small) {
+      margin-bottom: 20px;
+      justify-content: center;
+    }
   }
 
   &__link {
@@ -49,6 +63,12 @@
     &:hover {
       text-decoration: underline;
     }
+
+    &:last-child {
+      @media ($small) {
+        margin-right: 0;
+      }
+    }
   }
 
   &__text {
@@ -58,6 +78,10 @@
     letter-spacing: 0.1px;
     color: #3fc2bb;
     opacity: 0.4;
+
+    @media ($small) {
+      text-align: center;
+    }
 
     img {
       position: relative;

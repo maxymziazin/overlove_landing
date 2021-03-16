@@ -1,20 +1,28 @@
 .team {
-  padding: 240px 0;
+  padding: 240px 0 220px;
 
   @media ($extra-large-XL) {
-    padding: 200px 0;
+    padding: 200px 0 180px;
   }
 
   @media ($extra-large) {
-    padding: 160px 0;
+    padding: 160px 0 140px;
   }
 
   @media ($large) {
-    padding: 100px 0;
+    padding: 100px 0 80px;
   }
 
   @media ($medium) {
-    padding: 100px 0 60px;
+    padding: 100px 0 80px;
+  }
+
+  @media ($small) {
+    padding: 80px 0 40px;
+  }
+
+  @media ($extra-small) {
+    padding: 50px 0 20px;
   }
 
   &__title {
@@ -26,6 +34,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @media ($medium) {
+      display: block;
+      margin-bottom: 66px;
+    }
   }
 
   &__text {
@@ -43,22 +56,48 @@
     @media ($large) {
       max-width: 600px;
     }
+
+    @media ($medium) {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .btn-hard {
+    @media ($extra-small) {
+      padding: 20px 60px;
+      display: block;
+      text-align: center;
+    }
+
+    &__icon {
+      @media ($extra-small) {
+        display: none;
+      }
+    }
   }
 
   &__members {
     display: flex;
     flex-wrap: wrap;
     margin: 0px -16px;
-    padding-bottom: 40px;
   }
 
   &__item {
     width: 25%;
     padding: 0px 16px;
+    margin-bottom: 80px;
 
     @media ($medium) {
       width: 33.33333%;
-      margin-bottom: 70px;
+    }
+
+    @media ($small) {
+      width: 50%;
+    }
+
+    @media ($extra-small) {
+      width: 100%;
     }
   }
 }
